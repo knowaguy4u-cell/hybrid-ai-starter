@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hybrid AI Starter</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Hybrid AI Starter</h1>
+      <p class="sub">Gemini Nano on-device in Chrome, cloud fallback via Firebase AI Logic.</p>
+      <textarea id="prompt" rows="4" placeholder="Ask something...">Summarize why on-device AI helps privacy in two sentences.</textarea>
+      <button id="run">Run</button>
+      <div class="status">
+        <span id="badge" class="badge">not run yet</span>
+        <span id="progress" class="progress"></span>
+      </div>
+      <pre id="out"></pre>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
